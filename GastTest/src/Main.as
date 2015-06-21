@@ -8,6 +8,9 @@ package
 	{
 		public function Main()
 		{
+			stage.scaleMode = "noScale";
+			stage.align = "TL";
+			addChild( new GastTest(stage) );
 		}
 	}
 }
