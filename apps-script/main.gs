@@ -16,26 +16,6 @@ function doPost(req){
   return output(result);
 }
 
-function debug(){
-  var req = {
-    parameter:{
-      sheetName : "s0",
-//      action : ACTION_TYPE_APPEND,
-      action : ACTION_TYPE_FETCH,
-      actionParam : 10,
-      
-      saveData : JSON.stringify({
-        browser:"chrome",
-        OS:"windows 7",
-        flashplayer:"16",
-        game1:"hogehoge",
-        game2:"fwefwf"
-      })
-    }
-  };  
-  reveiveHandler(req);
-}
-
 function reveiveHandler(req, option){
   if(req){
     var sheetName = req.parameter.sheetName;
