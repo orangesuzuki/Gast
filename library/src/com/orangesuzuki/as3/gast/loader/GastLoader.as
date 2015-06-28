@@ -119,7 +119,7 @@ package com.orangesuzuki.as3.gast.loader
 		{
 			var data:String = urlLoader.data;
 			data = data.replace(/\\/g, '"');
-//			data = data.replace(/\"\"/g, '\"');
+			data = data.replace(/\"\"/g, '\"');
 
 			if (_doneFunc != null)
 				_doneFunc(data);
